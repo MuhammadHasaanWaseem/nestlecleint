@@ -46,7 +46,7 @@ export function Services() {
           What Makes Us <span className="highlight">Different</span>
         </motion.h2>
         <motion.p className="text-center text-[var(--uba-muted)] mb-12" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
-          Nestlé Pure Life stands apart through quality, sustainability, and innovation
+          Usama Pure Life stands apart through quality, sustainability, and innovation
         </motion.p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 product-perspective">
           {MODULES.map((m, i) => (

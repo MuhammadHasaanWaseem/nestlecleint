@@ -39,7 +39,7 @@ export function GlobalPresence() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Nestlé Pure Life is the world&apos;s leading bottled water brand, delivering clean and refreshing hydration to over 150 countries. Every drop goes through a rigorous 12-step quality purification process to ensure the highest safety standards.
+              Usama Pure Life is the world&apos;s leading bottled water brand, delivering clean and refreshing hydration to over 150 countries. Every drop goes through a rigorous 12-step quality purification process to ensure the highest safety standards.
             </motion.p>
             <motion.p
               className="text-[var(--uba-muted)] mb-8"
@@ -80,7 +80,7 @@ export function GlobalPresence() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <img src={aboutImg} alt="Nestlé pure water" className="w-full h-auto object-cover" loading="lazy" />
+              <img src={aboutImg} alt="Usama pure water" className="w-full h-auto object-cover" loading="lazy" />
             </motion.div>
             <div className="grid grid-cols-2 gap-4">
               {STATS.map((s, i) => (
@@ -114,7 +114,7 @@ export function GlobalPresence() {
             Water is life&apos;s essential foundation.
           </p>
           <p className="text-[var(--uba-dark)] font-bold mt-1">
-            Nestlé Pure Life — committed to bringing safe, clean hydration to every home.
+            Usama Pure Life — committed to bringing safe, clean hydration to every home.
           </p>
         </motion.div>
       </div>

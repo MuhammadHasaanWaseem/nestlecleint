@@ -14,7 +14,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
     <div className="fixed inset-0 z-50 bg-gradient-to-b from-[#caf0f8] to-white flex flex-col items-center justify-center">
       <div className="text-center splash-fade-in">
         <p className="text-[var(--uba-dark)] font-bold text-4xl sm:text-5xl tracking-tight">
-          Nestlé Pure Life
+          Usama Pure Life
         </p>
         <p className="text-[var(--uba-gold)] text-lg mt-2 font-medium">Pure Water. Pure Life.</p>
       </div>

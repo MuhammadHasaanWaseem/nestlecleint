@@ -35,7 +35,7 @@ export function Hero() {
             {/* Heading */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">
-                Nestlé Pure Life
+                Usama Pure Life
               </span>
               <br />
               <span className="relative inline-block mt-2">
@@ -89,7 +89,7 @@ export function Hero() {
             <div className="relative transform-gpu rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 backdrop-blur-sm">
               <img
                 src={heroImg}
-                alt="Nestlé Pure Life water bottles"
+                alt="Usama Pure Life water bottles"
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
                 loading="eager"
               />

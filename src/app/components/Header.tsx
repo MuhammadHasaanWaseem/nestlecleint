@@ -47,7 +47,7 @@ export function Header() {
         <motion.a href="#home" className="flex items-center gap-2 shrink-0" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
           <Droplets className="w-7 h-7 text-[var(--uba-gold)]" />
           <span className="text-xl sm:text-2xl font-bold text-[var(--uba-dark)] tracking-tight">
-            Nestlé Pure Life
+            Usama Pure Life
           </span>
         </motion.a>
 
@@ -107,7 +107,7 @@ export function Header() {
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100 bg-gradient-to-r from-[var(--uba-gold)]/10 to-transparent">
               <span className="text-xl font-bold text-[var(--uba-dark)] tracking-tight flex items-center gap-2">
                 <Droplets className="w-5 h-5 text-[var(--uba-gold)]" />
-                Nestlé Pure Life
+                Usama Pure Life
               </span>
               <motion.button
                 type="button"

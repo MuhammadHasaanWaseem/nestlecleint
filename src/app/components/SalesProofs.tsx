@@ -68,7 +68,7 @@ export function SalesProofs() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          See what makes Nestlé Pure Life the choice of millions.
+          See what makes Usama Pure Life the choice of millions.
         </motion.p>
       </div>
       <div className="uba-scroll-row-wrap">

@@ -11,7 +11,7 @@ const CASE_STUDIES = [
   {
     title: 'Clean Water for Rural Pakistan',
     category: 'Community Impact',
-    description: 'Nestlé installed water purification plants in 50+ rural villages, providing free access to clean drinking water for over 200,000 people.',
+    description: 'Usama installed water purification plants in 50+ rural villages, providing free access to clean drinking water for over 200,000 people.',
     results: [
       { label: 'Villages Served', value: '50+', icon: Globe },
       { label: 'People Impacted', value: '200K+', icon: Heart },

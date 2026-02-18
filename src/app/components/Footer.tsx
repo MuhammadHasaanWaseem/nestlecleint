@@ -44,7 +44,7 @@ export function Footer() {
           >
             <div className="flex items-center gap-2 mb-3">
               <Droplets className="w-6 h-6 text-[var(--uba-gold-light)]" />
-              <span className="text-white font-bold text-lg">Nestlé Pure Life</span>
+              <span className="text-white font-bold text-lg">Usama Pure Life</span>
             </div>
             <p className="text-sm max-w-xs">
               Pure water for a healthier life. Trusted by millions of families in over 150 countries worldwide.
@@ -159,8 +159,8 @@ export function Footer() {
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          <p>© 2026 Nestlé Pure Life. All rights reserved.</p>
-          <p>A Nestlé Waters Brand</p>
+          <p>© 2026 Usama Pure Life. All rights reserved.</p>
+          <p>A Usama Waters Brand</p>
         </motion.div>
       </div>
     </motion.footer>

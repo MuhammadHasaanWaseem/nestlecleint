@@ -25,7 +25,7 @@ export function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          The <span className="highlight">Nestlé Quality Promise</span>
+          The <span className="highlight">Usama Quality Promise</span>
         </motion.h2>
         <motion.p
           className="text-center text-[var(--uba-muted)] max-w-xl mx-auto mb-12"
@@ -34,7 +34,7 @@ export function Stats() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          Every bottle of Nestlé Pure Life meets the highest international quality and safety standards — from source to shelf.
+          Every bottle of Usama Pure Life meets the highest international quality and safety standards — from source to shelf.
         </motion.p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {ITEMS.map((item, i) => (

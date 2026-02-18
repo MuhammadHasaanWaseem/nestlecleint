@@ -29,7 +29,7 @@ export function CourseSection() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.h2 className="uba-section-title text-center mb-2" initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          Nestlé Pure Life <span className="highlight">By The Numbers</span>
+          Usama Pure Life <span className="highlight">By The Numbers</span>
         </motion.h2>
         <motion.p className="text-center text-[var(--uba-muted)] max-w-2xl mx-auto mb-12" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }}>
           From sourcing pristine water to delivering it to your doorstep — every number tells a story of trust, quality, and global impact.
@@ -44,7 +44,7 @@ export function CourseSection() {
         </div>
 
         <motion.h2 className="uba-section-title text-center mb-2" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          Why Families Trust <span className="highlight">Nestlé Pure Life</span>
+          Why Families Trust <span className="highlight">Usama Pure Life</span>
         </motion.h2>
         <motion.p className="text-center text-[var(--uba-muted)] mb-10" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.05 }}>
           Pure water backed by science, quality, and decades of trust.
@@ -65,7 +65,7 @@ export function CourseSection() {
           Our Complete <span className="highlight">Product Range</span>
         </motion.h2>
         <motion.p className="text-center text-[var(--uba-muted)] max-w-xl mx-auto mb-8" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          Whether at home, in the office, or on the go — Nestlé has the right size for every moment.
+          Whether at home, in the office, or on the go — Usama has the right size for every moment.
         </motion.p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {PRODUCT_RANGE.map((s, i) => (

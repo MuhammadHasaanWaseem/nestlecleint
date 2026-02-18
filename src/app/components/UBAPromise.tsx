@@ -25,7 +25,7 @@ export function UBAPromise() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          The <span className="highlight">Nestlé Promise</span>
+          The <span className="highlight">Usama Promise</span>
         </motion.h2>
         <motion.p
           className="text-center text-[var(--uba-muted)] max-w-xl mx-auto mb-10"

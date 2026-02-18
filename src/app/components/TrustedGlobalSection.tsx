@@ -96,7 +96,7 @@ export function TrustedGlobalSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Nestlé Pure Life — delivering <span className="text-[var(--uba-gold)] font-semibold">clean water</span> to families in 150+ countries.
+          Usama Pure Life — delivering <span className="text-[var(--uba-gold)] font-semibold">clean water</span> to families in 150+ countries.
         </motion.p>
       </div>
       <div className="space-y-6">

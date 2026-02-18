@@ -8,21 +8,21 @@ export function Testimonials() {
       name: 'Ayesha Khan',
       role: 'Mother & Homemaker',
       company: 'Lahore, Pakistan',
-      content: 'Nestlé Pure Life is the only water brand I trust for my family. The taste is always clean and fresh, and I know every bottle meets the highest quality standards. My children love it!',
+      content: 'Usama Pure Life is the only water brand I trust for my family. The taste is always clean and fresh, and I know every bottle meets the highest quality standards. My children love it!',
       rating: 5,
     },
     {
       name: 'Ahmed Al-Mansoor',
       role: 'Hotel Manager',
       company: 'Dubai, UAE',
-      content: 'We serve Nestlé Pure Life exclusively at our hotel. Our guests consistently praise the water quality, and Nestlé\'s reliable delivery keeps us stocked. A truly premium brand.',
+      content: 'We serve Usama Pure Life exclusively at our hotel. Our guests consistently praise the water quality, and Usama\'s reliable delivery keeps us stocked. A truly premium brand.',
       rating: 5,
     },
     {
       name: 'Dr. Sarah Williams',
       role: 'Nutritionist',
       company: 'London, UK',
-      content: 'I recommend Nestlé Pure Life to my clients because of their rigorous 12-step purification process and balanced mineral content. It\'s water you can genuinely trust.',
+      content: 'I recommend Usama Pure Life to my clients because of their rigorous 12-step purification process and balanced mineral content. It\'s water you can genuinely trust.',
       rating: 5,
     },
     {
@@ -48,7 +48,7 @@ export function Testimonials() {
             What People <span className="highlight">Say</span>
           </h2>
           <p className="text-lg text-[var(--uba-muted)] max-w-2xl mx-auto">
-            Hear from families, professionals, and businesses who trust Nestlé Pure Life every day.
+            Hear from families, professionals, and businesses who trust Usama Pure Life every day.
           </p>
         </motion.div>
 

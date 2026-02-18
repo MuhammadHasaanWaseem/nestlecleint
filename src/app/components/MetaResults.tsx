@@ -38,7 +38,7 @@ export function MetaResults() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          Nestlé Pure Life is committed to providing clean, safe drinking water and promoting healthy hydration habits across the globe.
+          Usama Pure Life is committed to providing clean, safe drinking water and promoting healthy hydration habits across the globe.
         </motion.p>
         <div className="grid md:grid-cols-2 gap-6">
           <motion.div
@@ -52,7 +52,7 @@ export function MetaResults() {
             <div className="aspect-video rounded-lg overflow-hidden bg-gray-100">
               <img
                 src={waterImg}
-                alt="Nestlé water bottles production"
+                alt="Usama water bottles production"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -70,7 +70,7 @@ export function MetaResults() {
             <div className="aspect-video rounded-lg overflow-hidden bg-gray-100">
               <img
                 src={nestleImg}
-                alt="Nestlé Pure Life branding"
+                alt="Usama Pure Life branding"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

@@ -99,7 +99,7 @@ export function Process() {
             Pure Water. Pure Commitment.
           </h3>
           <p className="text-lg text-blue-100 mb-6 max-w-2xl mx-auto">
-            Every bottle is a promise — of quality, safety, and sustainability. Trust Nestlé Pure Life for your family&apos;s hydration needs.
+            Every bottle is a promise — of quality, safety, and sustainability. Trust Usama Pure Life for your family&apos;s hydration needs.
           </p>
           <div className="flex flex-wrap justify-center gap-8 mt-8">
             <div className="text-center">

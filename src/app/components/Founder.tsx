@@ -46,7 +46,7 @@ export function Founder() {
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
         >
-          Meet the team behind Nestlé Pure Life&apos;s mission to bring clean water to every home.
+          Meet the team behind Usama Pure Life&apos;s mission to bring clean water to every home.
         </motion.p>
         <motion.div
           className="uba-card p-6 sm:p-8 flex flex-col md:flex-row gap-8"
@@ -62,7 +62,7 @@ export function Founder() {
             >
               <img
                 src={ceoImage}
-                alt="Nestlé Pure Life Regional Director"
+                alt="Usama Pure Life Regional Director"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -91,7 +91,7 @@ export function Founder() {
               viewport={{ once: true }}
               transition={{ delay: 0.25 }}
             >
-              Nestlé Pure Life
+              Usama Pure Life
             </motion.h3>
             <motion.p
               className="text-[var(--uba-muted)] text-sm"
