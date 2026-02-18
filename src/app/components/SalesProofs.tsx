@@ -15,16 +15,18 @@ const PROOFS = [
 function ProofCard({ p }: { p: (typeof PROOFS)[0] }) {
   return (
     <motion.div
-      className="uba-sales-proof-card uba-card p-5 overflow-hidden"
-      whileHover={{ y: -4, scale: 1.02 }}
+      className="product-showcase-card p-0 overflow-hidden"
+      whileHover={{ y: -8, scale: 1.02 }}
       transition={{ type: 'spring', stiffness: 400, damping: 17 }}
     >
-      <div className="aspect-video rounded-lg mb-4 bg-gray-100 overflow-hidden">
+      <div className="product-card-image aspect-video bg-gray-100">
         <img src={p.image} alt={p.title} className="w-full h-full object-cover" loading="lazy" />
       </div>
-      <p className="font-semibold text-[var(--uba-dark)] text-sm leading-tight">{p.title}</p>
-      <p className="text-[var(--uba-gold)] font-bold mt-1">{p.metric}</p>
-      <p className="text-xs text-[var(--uba-muted)] mt-1">{p.sub}</p>
+      <div className="p-5">
+        <p className="font-semibold text-[var(--uba-dark)] text-sm leading-tight">{p.title}</p>
+        <p className="text-[var(--uba-gold)] font-bold mt-1 text-lg">{p.metric}</p>
+        <p className="text-xs text-[var(--uba-muted)] mt-1">{p.sub}</p>
+      </div>
     </motion.div>
   );
 }
@@ -35,13 +37,13 @@ export function SalesProofs() {
   return (
     <motion.section
       id="sales-proofs"
-      className="py-16 bg-white overflow-hidden"
+      className="py-20 bg-white overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-10">
         <motion.span
           className="uba-badge block w-fit mx-auto mb-2"
           initial={{ opacity: 0, scale: 0.9 }}

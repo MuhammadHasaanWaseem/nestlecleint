@@ -31,7 +31,7 @@ const MODULES = [
 export function Services() {
   return (
     <motion.section
-      id="products"
+      id="services"
       className="py-16 bg-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -48,16 +48,15 @@ export function Services() {
         <motion.p className="text-center text-[var(--uba-muted)] mb-12" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
           Nestlé Pure Life stands apart through quality, sustainability, and innovation
         </motion.p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 product-perspective">
           {MODULES.map((m, i) => (
             <motion.div
               key={m.title}
-              className="uba-card p-6"
+              className="product-card-3d p-6"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 + i * 0.1 }}
-              whileHover={{ y: -6, scale: 1.02 }}
             >
               <div className="w-12 h-12 rounded-xl bg-[var(--uba-gold)] flex items-center justify-center mb-4">
                 <m.icon className="w-6 h-6 text-white" />

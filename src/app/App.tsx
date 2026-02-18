@@ -7,6 +7,7 @@ import { TrustedGlobalSection } from './components/TrustedGlobalSection';
 import { Stats } from './components/Stats';
 import { UBAPromise } from './components/UBAPromise';
 import { MetaResults } from './components/MetaResults';
+import { ProductSection } from './components/ProductSection';
 import { SalesProofs } from './components/SalesProofs';
 import { Certifications } from './components/Certifications';
 import { CourseSection } from './components/CourseSection';
@@ -36,6 +37,9 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <Pricing />
+
+        <ProductSection />
         <GlobalPresence />
         <TrustedGlobalSection />
         <Stats />
