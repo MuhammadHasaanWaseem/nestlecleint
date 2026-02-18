@@ -1,0 +1,176 @@
+/* UBA design system - responsive, minimal for performance */
+:root {
+  --uba-gold: #e5a00d;
+  --uba-gold-light: #f5d547;
+  --uba-dark: #1a1a1a;
+  --uba-muted: #4b5563;
+  --uba-bg-subtle: linear-gradient(180deg, #f8f7ff 0%, #fff 100%);
+}
+
+.uba-section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--uba-dark);
+}
+
+.uba-section-title .highlight {
+  color: var(--uba-gold);
+}
+
+.uba-badge {
+  display: inline-block;
+  background: rgba(229, 160, 13, 0.15);
+  color: var(--uba-dark);
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.uba-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.uba-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.uba-btn-primary {
+  background: var(--uba-gold);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.uba-btn-primary:hover {
+  background: #d4920a;
+}
+
+.uba-nav-float {
+  max-width: min(1100px, 92vw);
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 9999px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 0.6rem 1.25rem;
+}
+
+.uba-scroll-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--uba-gold);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  box-shadow: 0 4px 12px rgba(229, 160, 13, 0.4);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.uba-scroll-top:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .uba-nav-float {
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Splash: no descriptive text, just logo fade */
+@keyframes splash-fade-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.splash-fade-in {
+  animation: splash-fade-in 0.7s ease-out both;
+}
+
+/* Light entrance animations (CSS-only, performant) */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.uba-anim-delay-1 { animation: fade-in-up 0.6s ease-out 0.1s both; }
+.uba-anim-delay-2 { animation: fade-in-up 0.6s ease-out 0.2s both; }
+.uba-anim-delay-3 { animation: fade-in-up 0.6s ease-out 0.3s both; }
+.uba-anim-delay-4 { animation: fade-in-up 0.6s ease-out 0.4s both; }
+.uba-anim-delay-5 { animation: fade-in-up 0.6s ease-out 0.5s both; }
+
+/* Scrolling rows: one R→L, one L→R */
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.uba-scroll-row-wrap {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+.uba-scroll-row {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  padding: 0.75rem 0;
+}
+.uba-scroll-row--left {
+  animation: scroll-left 35s linear infinite;
+}
+.uba-scroll-row--right {
+  animation: scroll-right 40s linear infinite;
+}
+.uba-scroll-row:hover {
+  animation-play-state: paused;
+}
+.uba-partner-card {
+  flex-shrink: 0;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.uba-partner-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+/* Sales Proofs: horizontal loop scroll cards */
+.uba-scroll-row-sales {
+  gap: 1.5rem;
+}
+.uba-sales-proof-card {
+  flex-shrink: 0;
+  width: 300px;
+  min-width: 300px;
+}
+@media (max-width: 640px) {
+  .uba-sales-proof-card {
+    width: 260px;
+    min-width: 260px;
+  }
+}
