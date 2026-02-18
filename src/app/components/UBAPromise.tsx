@@ -1,17 +1,18 @@
-import { CheckCircle, Trophy, Globe } from 'lucide-react';
+import { ShieldCheck, Droplets, Leaf } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion } from 'motion/react';
 
 const CARDS = [
-  { icon: CheckCircle, title: 'Proven Systems', desc: 'Step-by-step frameworks that produce results.' },
-  { icon: Trophy, title: 'Results-Focused', desc: 'We measure outcomes — revenue, clients, repeatability.' },
-  { icon: Globe, title: 'Global Expertise', desc: 'Methods tailored for Pakistan, Gulf, Europe and beyond.' },
+  { icon: ShieldCheck, title: 'Pure & Safe', desc: '12-step purification ensures every drop meets the highest safety standards.' },
+  { icon: Droplets, title: 'Great Taste', desc: 'Enhanced with essential minerals for a crisp, refreshing taste you can trust.' },
+  { icon: Leaf, title: 'Eco-Conscious', desc: 'Committed to reducing plastic waste and achieving carbon neutrality.' },
 ];
 
 export function UBAPromise() {
   return (
     <motion.section
-      className="py-16 bg-gradient-to-b from-[#fefce8]/20 to-white"
+      id="sustainability"
+      className="py-16 bg-gradient-to-b from-[#e0f7ff]/20 to-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -24,7 +25,7 @@ export function UBAPromise() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          The <span className="highlight">Usama Shopify Promise</span>
+          The <span className="highlight">Nestlé Promise</span>
         </motion.h2>
         <motion.p
           className="text-center text-[var(--uba-muted)] max-w-xl mx-auto mb-10"
@@ -33,7 +34,7 @@ export function UBAPromise() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          Practical systems, proven results. Follow the program, do the work, and build a repeatable eCommerce business.
+          Quality water for quality life. Our commitment to purity, sustainability, and community well-being drives everything we do.
         </motion.p>
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           {CARDS.map((c, i) => (
@@ -56,7 +57,7 @@ export function UBAPromise() {
         </div>
         <motion.div className="text-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.4 }}>
           <Button className="uba-btn-primary" asChild>
-            <a href="#course">Enroll Now</a>
+            <a href="#products">Explore Products</a>
           </Button>
         </motion.div>
       </div>

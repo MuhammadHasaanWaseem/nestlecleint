@@ -1,18 +1,18 @@
-import { Trophy, Rocket, TrendingUp, Award } from 'lucide-react';
+import { Droplets, Globe, ShieldCheck, Award } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const ITEMS = [
-  { icon: Trophy, value: '500+', label: 'Shopify Stores Launched' },
-  { icon: Rocket, value: '500+', label: 'Meta Ad Campaigns' },
-  { icon: TrendingUp, value: '$750M+', label: 'Client Revenue Generated' },
-  { icon: Award, value: 'Meta', label: 'Verified Expert' },
+  { icon: Droplets, value: '1B+', label: 'Bottles Delivered Annually' },
+  { icon: Globe, value: '150+', label: 'Countries Reached' },
+  { icon: ShieldCheck, value: '12-Step', label: 'Purification Standard' },
+  { icon: Award, value: '#1', label: 'Global Water Brand' },
 ];
 
 export function Stats() {
   return (
     <motion.section
-      id="why-us"
-      className="py-16 bg-gradient-to-b from-white to-[#fefce8]/30"
+      id="quality"
+      className="py-16 bg-gradient-to-b from-white to-[#e0f7ff]/30"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -25,7 +25,7 @@ export function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          The <span className="highlight">Usama Shopify Promise</span>
+          The <span className="highlight">Nestlé Quality Promise</span>
         </motion.h2>
         <motion.p
           className="text-center text-[var(--uba-muted)] max-w-xl mx-auto mb-12"
@@ -34,7 +34,7 @@ export function Stats() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          Practical systems, proven results. Follow the program, do the work, and build a repeatable eCommerce business.
+          Every bottle of Nestlé Pure Life meets the highest international quality and safety standards — from source to shelf.
         </motion.p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {ITEMS.map((item, i) => (

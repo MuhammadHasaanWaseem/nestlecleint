@@ -1,6 +1,6 @@
-import { Menu, X, ChevronDown, ChevronRight, Award, Users, Sparkles, BookOpen, Briefcase, Wrench, MessageCircle } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronRight, Droplets, Info, Package, Award, Phone, Heart, Users } from 'lucide-react';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,21 +11,20 @@ import { Button } from './ui/button';
 import { Sheet, SheetContent } from './ui/sheet';
 
 const NAV = [
-  { name: 'Certifications', href: '#certifications', icon: Award },
-  { name: 'About Us', href: '#about', icon: Users },
-  { name: 'Why Us', href: '#why-us', icon: Sparkles },
-  { name: 'Course', href: '#course', icon: BookOpen },
+  { name: 'About', href: '#about', icon: Info },
+  { name: 'Products', href: '#products', icon: Package },
+  { name: 'Quality', href: '#quality', icon: Award },
   {
-    name: 'Work',
-    icon: Briefcase,
+    name: 'Impact',
+    icon: Heart,
     dropdown: [
-      { name: 'Meta Results', href: '#work-meta' },
-      { name: 'Sales Proofs', href: '#sales-proofs' },
-      { name: 'Portfolio', href: '#work' },
+      { name: 'Sustainability', href: '#sustainability' },
+      { name: 'Community', href: '#community' },
+      { name: 'Global Reach', href: '#global' },
     ],
   },
-  { name: 'Services', href: '#services', icon: Wrench },
-  { name: 'Contact', href: '#contact', icon: MessageCircle },
+  { name: 'Testimonials', href: '#testimonials', icon: Users },
+  { name: 'Contact', href: '#contact', icon: Phone },
 ];
 
 export function Header() {
@@ -46,8 +45,9 @@ export function Header() {
         transition={{ duration: 0.4, delay: 0.1 }}
       >
         <motion.a href="#home" className="flex items-center gap-2 shrink-0" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+          <Droplets className="w-7 h-7 text-[var(--uba-gold)]" />
           <span className="text-xl sm:text-2xl font-bold text-[var(--uba-dark)] tracking-tight">
-            Usama Shopify
+            Nestlé Pure Life
           </span>
         </motion.a>
 
@@ -83,7 +83,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <Button className="uba-btn-primary text-sm" asChild>
-            <a href="#contact">Contact Now</a>
+            <a href="#contact">Get In Touch</a>
           </Button>
         </div>
 
@@ -105,7 +105,10 @@ export function Header() {
         >
           <div className="flex flex-col h-full">
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100 bg-gradient-to-r from-[var(--uba-gold)]/10 to-transparent">
-              <span className="text-xl font-bold text-[var(--uba-dark)] tracking-tight">Usama Shopify</span>
+              <span className="text-xl font-bold text-[var(--uba-dark)] tracking-tight flex items-center gap-2">
+                <Droplets className="w-5 h-5 text-[var(--uba-gold)]" />
+                Nestlé Pure Life
+              </span>
               <motion.button
                 type="button"
                 onClick={() => setDrawerOpen(false)}
@@ -177,8 +180,8 @@ export function Header() {
               >
                 <Button className="uba-btn-primary w-full flex items-center justify-center gap-2 py-4" asChild>
                   <a href="#contact" onClick={() => setDrawerOpen(false)}>
-                    <MessageCircle className="w-5 h-5" />
-                    Contact Now
+                    <Phone className="w-5 h-5" />
+                    Get In Touch
                   </a>
                 </Button>
               </motion.div>

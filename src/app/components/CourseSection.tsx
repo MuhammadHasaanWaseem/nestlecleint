@@ -1,26 +1,26 @@
-import { Check, Globe, TrendingUp, Trophy, Rocket, Zap } from 'lucide-react';
+import { Droplets, Globe, ShieldCheck, Heart, Leaf, Recycle } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const TRUST_ITEMS = [
-  { icon: Check, title: 'Built on Real Experience', desc: 'Not theory or copied content, proven systems from real stores' },
-  { icon: Globe, title: 'Global Case Studies', desc: 'Learn from successful stores across multiple countries' },
-  { icon: TrendingUp, title: 'Deep Meta Ads Training', desc: 'Complete Meta advertising mastery with practical examples' },
-  { icon: Trophy, title: 'Structured & Beginner-Friendly', desc: 'Step-by-step pathway even if you know nothing' },
-  { icon: Rocket, title: 'Earn Through Services', desc: 'Build your own global eCommerce service business' },
-  { icon: Zap, title: 'Long-Term Skills', desc: 'Real expertise, not shortcuts or quick hacks' },
+  { icon: ShieldCheck, title: 'Rigorous Quality Control', desc: 'Over 100 quality checks on every batch before it reaches you' },
+  { icon: Globe, title: 'Global Presence', desc: 'Trusted in 150+ countries across every continent' },
+  { icon: Droplets, title: '12-Step Purification', desc: 'Industry-leading multi-stage filtration and treatment' },
+  { icon: Heart, title: 'Community Impact', desc: 'Clean water access programs benefiting millions' },
+  { icon: Leaf, title: 'Sustainable Sourcing', desc: 'Responsible water stewardship at every source' },
+  { icon: Recycle, title: 'Eco-Friendly Packaging', desc: 'Recyclable bottles with reduced plastic footprint' },
 ];
 
-const BECOME_ITEMS = [
-  'Worldwide Store Builder', 'Meta Ads Expert', 'Product Research Specialist',
-  'Client & Service Provider', 'Scaling Specialist', 'Global Market Expert',
+const PRODUCT_RANGE = [
+  'Still Water 0.5L', 'Still Water 1.5L', 'Family Size 5L',
+  'Home Delivery 19L', 'Sparkling Water', 'Flavoured Water',
 ];
 
-const STAT_LABELS = ['Stores Launched', 'Ad Campaigns', 'Revenue Generated', 'Coverage'];
+const STAT_LABELS = ['Bottles Daily', 'Countries', 'Quality Checks', 'Years Trusted'];
 
 export function CourseSection() {
   return (
     <motion.section
-      id="course"
+      id="community"
       className="py-16 bg-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -29,13 +29,13 @@ export function CourseSection() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.h2 className="uba-section-title text-center mb-2" initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          Master Global <span className="highlight">E-Commerce Domination</span>
+          Nestlé Pure Life <span className="highlight">By The Numbers</span>
         </motion.h2>
         <motion.p className="text-center text-[var(--uba-muted)] max-w-2xl mx-auto mb-12" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }}>
-          Usama Shopify COURSE 2.6 is a complete, step-by-step eCommerce transformation program. Learn the exact systems used to launch and scale profitable stores worldwide from product research to Meta Ads to global targeting.
+          From sourcing pristine water to delivering it to your doorstep — every number tells a story of trust, quality, and global impact.
         </motion.p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
-          {['500+', '500+', '$750M+', 'Global'].map((v, i) => (
+          {['3M+', '150+', '100+', '30+'].map((v, i) => (
             <motion.div key={i} className="uba-card p-4 text-center" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.1 + i * 0.06 }} whileHover={{ y: -4 }}>
               <span className="text-lg font-bold text-[var(--uba-gold)]">{v}</span>
               <p className="text-xs text-[var(--uba-muted)] mt-1">{STAT_LABELS[i]}</p>
@@ -44,9 +44,11 @@ export function CourseSection() {
         </div>
 
         <motion.h2 className="uba-section-title text-center mb-2" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          Why Students Trust <span className="highlight">Usama Shopify COURSE 2.6</span>
+          Why Families Trust <span className="highlight">Nestlé Pure Life</span>
         </motion.h2>
-        <motion.p className="text-center text-[var(--uba-muted)] mb-10" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.05 }}>Built on real experience, real systems, real results.</motion.p>
+        <motion.p className="text-center text-[var(--uba-muted)] mb-10" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.05 }}>
+          Pure water backed by science, quality, and decades of trust.
+        </motion.p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {TRUST_ITEMS.map((item, i) => (
             <motion.div key={item.title} className="uba-card p-6" initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.08 * i }} whileHover={{ y: -5, scale: 1.02 }}>
@@ -60,26 +62,21 @@ export function CourseSection() {
         </div>
 
         <motion.h2 className="uba-section-title text-center mb-2" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          What You&apos;ll <span className="highlight">Become</span>
+          Our Complete <span className="highlight">Product Range</span>
         </motion.h2>
         <motion.p className="text-center text-[var(--uba-muted)] max-w-xl mx-auto mb-8" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          Upon completing Usama Shopify COURSE 2.6, you&apos;ll transform into a complete eCommerce professional with global expertise.
+          Whether at home, in the office, or on the go — Nestlé has the right size for every moment.
         </motion.p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
-          {BECOME_ITEMS.map((s, i) => (
+          {PRODUCT_RANGE.map((s, i) => (
             <motion.div key={s} className="uba-card p-4 flex items-center gap-3" initial={{ opacity: 0, x: -15 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 * i }} whileHover={{ x: 4 }}>
               <div className="w-9 h-9 rounded-full bg-[var(--uba-gold)] flex items-center justify-center shrink-0">
-                <span className="text-white text-sm">→</span>
+                <Droplets className="w-4 h-4 text-white" />
               </div>
               <span className="font-medium text-[var(--uba-dark)]">{s}</span>
             </motion.div>
           ))}
         </div>
-
-        <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h2 className="uba-section-title mb-2">Why Learn From <span className="highlight">Muhammad Usama</span></h2>
-          <p className="text-[var(--uba-muted)]">Learn directly from someone who has proven results.</p>
-        </motion.div>
       </div>
     </motion.section>
   );

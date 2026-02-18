@@ -1,11 +1,13 @@
-import { Trophy, Rocket, TrendingUp, Award } from 'lucide-react';
+import { Droplets, Globe, ShieldCheck, Heart } from 'lucide-react';
 import { motion } from 'motion/react';
 
+import aboutImg from '../Assets/viewwater.jpg';
+
 const STATS = [
-  { icon: Trophy, value: '500+', label: 'Shopify Stores Launched' },
-  { icon: Rocket, value: '500+', label: 'Meta Ad Campaigns' },
-  { icon: TrendingUp, value: '$750M+', label: 'Client Revenue Generated' },
-  { icon: Award, value: 'Meta', label: 'Verified Expert' },
+  { icon: Droplets, value: '150+', label: 'Countries Served' },
+  { icon: Globe, value: '50+', label: 'Bottling Plants' },
+  { icon: ShieldCheck, value: '12-Step', label: 'Purification Process' },
+  { icon: Heart, value: '#1', label: 'Bottled Water Brand' },
 ];
 
 export function GlobalPresence() {
@@ -28,7 +30,7 @@ export function GlobalPresence() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              Building <span className="highlight">Digital Excellence.</span>
+              Purity You Can <span className="highlight">Trust.</span>
             </motion.h2>
             <motion.p
               className="text-[var(--uba-muted)] mb-4"
@@ -37,7 +39,7 @@ export function GlobalPresence() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              With 5+ years of global eCommerce experience, we specialize in building scalable brands. We&apos;ve launched 500+ Shopify stores and managed 500+ Meta Ads campaigns, delivering real results across UAE, KSA, Pakistan, and UK.
+              Nestlé Pure Life is the world&apos;s leading bottled water brand, delivering clean and refreshing hydration to over 150 countries. Every drop goes through a rigorous 12-step quality purification process to ensure the highest safety standards.
             </motion.p>
             <motion.p
               className="text-[var(--uba-muted)] mb-8"
@@ -46,14 +48,14 @@ export function GlobalPresence() {
               viewport={{ once: true }}
               transition={{ delay: 0.15 }}
             >
-              Our approach is hands-on and results-driven, led personally with CEO-level dedication. From product research to profit scaling, we handle everything. With a proven 99%+ success rate and data-backed strategies, we ensure your brand is positioned for long-term success.
+              From sourcing to bottling, we are committed to sustainability, quality, and community well-being. Our mission is simple — make safe drinking water accessible to every family, every day.
             </motion.p>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { value: '5+', label: 'Years Experience' },
-                { value: '500+', label: 'Projects Completed' },
-                { value: '400+', label: 'Happy Clients' },
-                { value: '99%', label: 'Success Rate' },
+                { value: '150+', label: 'Countries Worldwide' },
+                { value: '30+', label: 'Years of Trust' },
+                { value: '1B+', label: 'Bottles Sold Yearly' },
+                { value: '100%', label: 'Quality Assured' },
               ].map((s, i) => (
                 <motion.div
                   key={s.label}
@@ -70,38 +72,49 @@ export function GlobalPresence() {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            {STATS.map((s, i) => (
-              <motion.div
-                key={s.label}
-                className="uba-card p-6 text-center"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
-                whileHover={{ y: -4, scale: 1.02 }}
-              >
-                <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-[var(--uba-gold)]/15 flex items-center justify-center">
-                  <s.icon className="w-6 h-6 text-[var(--uba-gold)]" />
-                </div>
-                <span className="block text-xl font-bold text-[var(--uba-gold)]">{s.value}</span>
-                <p className="text-sm text-[var(--uba-muted)] mt-1">{s.label}</p>
-              </motion.div>
-            ))}
+          <div>
+            <motion.div
+              className="rounded-2xl overflow-hidden shadow-lg mb-6"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <img src={aboutImg} alt="Nestlé pure water" className="w-full h-auto object-cover" loading="lazy" />
+            </motion.div>
+            <div className="grid grid-cols-2 gap-4">
+              {STATS.map((s, i) => (
+                <motion.div
+                  key={s.label}
+                  className="uba-card p-5 text-center"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
+                  whileHover={{ y: -4, scale: 1.02 }}
+                >
+                  <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-[var(--uba-gold)]/15 flex items-center justify-center">
+                    <s.icon className="w-6 h-6 text-[var(--uba-gold)]" />
+                  </div>
+                  <span className="block text-xl font-bold text-[var(--uba-gold)]">{s.value}</span>
+                  <p className="text-sm text-[var(--uba-muted)] mt-1">{s.label}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
         <motion.div
-          className="mt-16 p-6 rounded-xl bg-slate-100/80 text-center max-w-2xl mx-auto"
+          className="mt-16 p-6 rounded-xl bg-[#e0f7ff]/60 text-center max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p className="text-[var(--uba-dark)] font-medium">
-            You don&apos;t waste years learning through trial & error.
+            Water is life&apos;s essential foundation.
           </p>
           <p className="text-[var(--uba-dark)] font-bold mt-1">
-            You learn what actually works — proven systems used by professionals globally.
+            Nestlé Pure Life — committed to bringing safe, clean hydration to every home.
           </p>
         </motion.div>
       </div>

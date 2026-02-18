@@ -5,50 +5,50 @@ import { motion } from 'motion/react';
 export function Testimonials() {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'CEO, TechStart Inc.',
-      company: 'United States',
-      content: 'Shopify Usama transformed our online presence completely. Within 6 months, our e-commerce revenue increased by 240%. Their team is professional, responsive, and truly understands digital marketing.',
+      name: 'Ayesha Khan',
+      role: 'Mother & Homemaker',
+      company: 'Lahore, Pakistan',
+      content: 'Nestlé Pure Life is the only water brand I trust for my family. The taste is always clean and fresh, and I know every bottle meets the highest quality standards. My children love it!',
       rating: 5,
     },
     {
-      name: 'David Chen',
-      role: 'Marketing Director',
-      company: 'Singapore',
-      content: 'Working with Shopify Usama was a game-changer for our brand. Their paid advertising strategies delivered an impressive 5x ROAS. I highly recommend them for any business serious about growth.',
+      name: 'Ahmed Al-Mansoor',
+      role: 'Hotel Manager',
+      company: 'Dubai, UAE',
+      content: 'We serve Nestlé Pure Life exclusively at our hotel. Our guests consistently praise the water quality, and Nestlé\'s reliable delivery keeps us stocked. A truly premium brand.',
       rating: 5,
     },
     {
-      name: 'Emma Williams',
-      role: 'Founder, Luxe Fashion',
-      company: 'United Kingdom',
-      content: 'The branding and web development services exceeded our expectations. Shopify Usama created a stunning website that perfectly captures our brand identity and converts visitors into customers.',
+      name: 'Dr. Sarah Williams',
+      role: 'Nutritionist',
+      company: 'London, UK',
+      content: 'I recommend Nestlé Pure Life to my clients because of their rigorous 12-step purification process and balanced mineral content. It\'s water you can genuinely trust.',
       rating: 5,
     },
     {
-      name: 'Ahmed Al-Rashid',
-      role: 'COO, RetailHub',
-      company: 'UAE',
-      content: 'Outstanding results! Their SEO and content strategy helped us dominate our market segment. Organic traffic increased by 320% in just 8 months. Truly world-class service.',
+      name: 'Bilal Hussain',
+      role: 'Office Manager',
+      company: 'Karachi, Pakistan',
+      content: 'The 19L home delivery service is a lifesaver for our office. The water is consistently pure, the delivery is always on time, and the pricing is very competitive. Highly recommended!',
       rating: 5,
     },
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-gray-50">
+    <section id="testimonials" className="py-20 bg-[#e0f7ff]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our Clients Say
+          <h2 className="uba-section-title mb-4">
+            What People <span className="highlight">Say</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it—hear from businesses we've helped transform
+          <p className="text-lg text-[var(--uba-muted)] max-w-2xl mx-auto">
+            Hear from families, professionals, and businesses who trust Nestlé Pure Life every day.
           </p>
         </motion.div>
 
@@ -63,24 +63,19 @@ export function Testimonials() {
             >
               <Card className="border-gray-200 hover:shadow-xl transition-all duration-300 h-full">
                 <CardContent className="p-8">
-                  <motion.div 
-                    className="flex items-start gap-4 mb-4"
-                    whileHover={{ scale: 1.05 }}
-                  >
+                  <motion.div className="flex items-start gap-4 mb-4" whileHover={{ scale: 1.05 }}>
                     <Quote className="text-[var(--uba-gold)] flex-shrink-0" size={32} />
                     <div className="flex gap-1">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="text-yellow-400 fill-yellow-400" size={18} />
+                        <Star key={i} className="text-[var(--uba-gold-light)] fill-[var(--uba-gold)]" size={18} />
                       ))}
                     </div>
                   </motion.div>
 
-                  <p className="text-gray-700 mb-6 leading-relaxed">
-                    {testimonial.content}
-                  </p>
+                  <p className="text-gray-700 mb-6 leading-relaxed">{testimonial.content}</p>
 
                   <div className="flex items-center gap-4">
-                    <motion.div 
+                    <motion.div
                       whileHover={{ scale: 1.2, rotate: 360 }}
                       transition={{ duration: 0.6 }}
                       className="w-12 h-12 bg-[var(--uba-gold)]/15 rounded-full flex items-center justify-center"

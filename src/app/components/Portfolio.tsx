@@ -1,64 +1,64 @@
 import { motion } from 'motion/react';
-import { TrendingUp, ShoppingCart, Users, ExternalLink } from 'lucide-react';
+import { Droplets, Globe, Heart, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
-import qfBlogImg from '../Assets/QF-Blog_Social-Media-Marketing_-Complete-Guide-for-Advertisers-2024_1920x1080.jpg';
-import newEditImg from '../Assets/new_edit3.width-600.format-jpeg.jpegquality-97.jpg';
-import jm2Img from '../Assets/jm2sboggkagjdnrkb7kh.jpg';
-import imagesJpeg from '../Assets/images.jpeg';
+import img1 from '../Assets/waterbottles.jpg';
+import img2 from '../Assets/nestle2.jpg';
+import img3 from '../Assets/viewwater.jpg';
+import img4 from '../Assets/drinking2.jpg';
 
 const CASE_STUDIES = [
   {
-    title: 'Luxury Fashion Brand',
-    category: 'E-commerce & Branding',
-    description: 'Complete Shopify store redesign with focus on luxury user experience and conversion optimization.',
+    title: 'Clean Water for Rural Pakistan',
+    category: 'Community Impact',
+    description: 'Nestlé installed water purification plants in 50+ rural villages, providing free access to clean drinking water for over 200,000 people.',
     results: [
-      { label: 'Revenue Increase', value: '240%', icon: TrendingUp },
-      { label: 'Conversion Rate', value: '4.2%', icon: ShoppingCart },
-      { label: 'AOV Growth', value: '65%', icon: Users },
+      { label: 'Villages Served', value: '50+', icon: Globe },
+      { label: 'People Impacted', value: '200K+', icon: Heart },
+      { label: 'Daily Liters', value: '100K+', icon: Droplets },
     ],
-    industry: 'Fashion & Retail',
-    image: qfBlogImg,
-    gradient: 'from-purple-500 to-pink-500',
-  },
-  {
-    title: 'Tech SaaS Platform',
-    category: 'Digital Marketing & SEO',
-    description: 'Comprehensive digital marketing strategy focused on lead generation and brand awareness.',
-    results: [
-      { label: 'Lead Growth', value: '380%', icon: TrendingUp },
-      { label: 'Organic Traffic', value: '520%', icon: Users },
-      { label: 'Cost Per Lead', value: '-45%', icon: ShoppingCart },
-    ],
-    industry: 'Technology & SaaS',
-    image: newEditImg,
+    industry: 'Social Impact',
+    image: img1,
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
-    title: 'Health & Wellness Store',
-    category: 'Shopify Development',
-    description: 'Custom Shopify Plus store with subscription model, loyalty program, and personalized shopping.',
+    title: 'Sustainable Packaging Initiative',
+    category: 'Sustainability',
+    description: 'Reduced plastic usage by 30% across all bottle formats through innovative lightweight packaging design.',
     results: [
-      { label: 'Monthly Revenue', value: '$250K+', icon: ShoppingCart },
-      { label: 'Subscribers', value: '12K+', icon: Users },
-      { label: 'Retention Rate', value: '85%', icon: TrendingUp },
+      { label: 'Plastic Reduced', value: '30%', icon: Droplets },
+      { label: 'Bottles Recycled', value: '5M+', icon: Globe },
+      { label: 'Carbon Offset', value: '40%', icon: Heart },
     ],
-    industry: 'Health & Wellness',
-    image: jm2Img,
+    industry: 'Environment',
+    image: img2,
     gradient: 'from-green-500 to-emerald-500',
   },
   {
-    title: 'International Electronics',
-    category: 'Paid Advertising',
-    description: 'Multi-channel paid advertising strategy across Google, Meta, and programmatic networks.',
+    title: 'School Hydration Program',
+    category: 'Health & Wellness',
+    description: 'Partnered with 500+ schools to provide clean drinking water and promote healthy hydration habits among children.',
     results: [
-      { label: 'ROAS', value: '6.8x', icon: TrendingUp },
-      { label: 'Ad Spend', value: '$500K+', icon: ShoppingCart },
-      { label: 'New Customers', value: '25K+', icon: Users },
+      { label: 'Schools', value: '500+', icon: Globe },
+      { label: 'Students', value: '150K+', icon: Heart },
+      { label: 'Water Stations', value: '1,200+', icon: Droplets },
     ],
-    industry: 'Consumer Electronics',
-    image: imagesJpeg,
-    gradient: 'from-orange-500 to-red-500',
+    industry: 'Education',
+    image: img3,
+    gradient: 'from-purple-500 to-pink-500',
+  },
+  {
+    title: 'Middle East Expansion',
+    category: 'Global Growth',
+    description: 'Successfully launched premium water products across 12 new markets in the Middle East and North Africa region.',
+    results: [
+      { label: 'New Markets', value: '12', icon: Globe },
+      { label: 'Sales Growth', value: '180%', icon: Droplets },
+      { label: 'Brand Recognition', value: '95%', icon: Heart },
+    ],
+    industry: 'Business Growth',
+    image: img4,
+    gradient: 'from-orange-500 to-amber-500',
   },
 ];
 
@@ -73,9 +73,9 @@ export function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="uba-section-title mb-2">Success Stories</h2>
+          <h2 className="uba-section-title mb-2">Our <span className="highlight">Impact Stories</span></h2>
           <p className="text-lg text-[var(--uba-muted)] max-w-2xl mx-auto">
-            Real results from real businesses. See how we've helped brands achieve exceptional growth.
+            Real initiatives making a real difference — from community programs to global sustainability efforts.
           </p>
         </motion.div>
 
@@ -107,11 +107,7 @@ export function Portfolio() {
                   <p className="text-gray-600 text-sm leading-relaxed mb-5">{study.description}</p>
                   <div className="grid grid-cols-3 gap-3 pt-4 border-t border-gray-200">
                     {study.results.map((result, idx) => (
-                      <motion.div
-                        key={idx}
-                        whileHover={{ scale: 1.05 }}
-                        className="text-center"
-                      >
+                      <motion.div key={idx} whileHover={{ scale: 1.05 }} className="text-center">
                         <result.icon className="mx-auto mb-1 text-[var(--uba-gold)]" size={18} />
                         <div className="text-lg font-bold text-gray-900">{result.value}</div>
                         <div className="text-xs text-gray-600">{result.label}</div>
@@ -123,31 +119,13 @@ export function Portfolio() {
                     className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[var(--uba-gold)] hover:underline"
                     whileHover={{ x: 4 }}
                   >
-                    <ExternalLink size={16} /> View case study
+                    <ExternalLink size={16} /> Learn more
                   </motion.a>
                 </CardContent>
               </Card>
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 text-center"
-        >
-          <p className="text-[var(--uba-muted)] mb-6">Want to see more case studies and detailed breakdowns?</p>
-          <motion.a
-            href="#contact"
-            className="uba-btn-primary inline-block"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View Full Portfolio
-          </motion.a>
-        </motion.div>
       </div>
     </section>
   );

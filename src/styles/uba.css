@@ -1,10 +1,10 @@
-/* UBA design system - responsive, minimal for performance */
+/* Nestle Water design system - responsive, minimal for performance */
 :root {
-  --uba-gold: #e5a00d;
-  --uba-gold-light: #f5d547;
-  --uba-dark: #1a1a1a;
+  --uba-gold: #0077B6;
+  --uba-gold-light: #48CAE4;
+  --uba-dark: #023E8A;
   --uba-muted: #4b5563;
-  --uba-bg-subtle: linear-gradient(180deg, #f8f7ff 0%, #fff 100%);
+  --uba-bg-subtle: linear-gradient(180deg, #e0f7ff 0%, #fff 100%);
 }
 
 .uba-section-title {
@@ -19,7 +19,7 @@
 
 .uba-badge {
   display: inline-block;
-  background: rgba(229, 160, 13, 0.15);
+  background: rgba(0, 119, 182, 0.12);
   color: var(--uba-dark);
   padding: 0.35rem 0.75rem;
   border-radius: 9999px;
@@ -50,7 +50,7 @@
 }
 
 .uba-btn-primary:hover {
-  background: #d4920a;
+  background: #005f92;
 }
 
 .uba-nav-float {
@@ -77,7 +77,7 @@
   align-items: center;
   justify-content: center;
   z-index: 40;
-  box-shadow: 0 4px 12px rgba(229, 160, 13, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.4);
   transition: transform 0.2s, opacity 0.2s;
 }
 

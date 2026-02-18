@@ -1,37 +1,37 @@
-import { Lightbulb, Rocket, ShoppingBag, Building2 } from 'lucide-react';
+import { Droplets, ShieldCheck, Leaf, Package } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const MODULES = [
-  { icon: Lightbulb, title: 'Product Research Mastery', items: [
-    { name: 'Trending Product Discovery', desc: 'Find viral products before competitors' },
-    { name: 'Niche Analysis & Validation', desc: 'Deep market research techniques' },
-    { name: 'Competitor Benchmarking', desc: 'Analyze competitor strategies' },
-    { name: 'Demand Forecasting', desc: 'Predict market trends accurately' },
+  { icon: Droplets, title: 'Water Purification', items: [
+    { name: '12-Step Filtration', desc: 'Multi-stage purification for ultimate purity' },
+    { name: 'Mineral Enhancement', desc: 'Essential minerals added for great taste' },
+    { name: 'UV & Ozone Treatment', desc: 'Advanced disinfection technology' },
+    { name: 'Quality Testing', desc: 'Over 100 quality checks per batch' },
   ]},
-  { icon: Rocket, title: 'Meta Ads Optimization', items: [
-    { name: 'Campaign Architecture', desc: 'Advanced audience segmentation' },
-    { name: 'Creative Testing Framework', desc: 'High-converting ad creatives' },
-    { name: 'Pixel Setup & Tracking', desc: 'Data driven measurement' },
-    { name: 'ROAS Scaling Strategies', desc: 'Sustainable profitable growth' },
+  { icon: ShieldCheck, title: 'Quality Assurance', items: [
+    { name: 'ISO 22000 Certified', desc: 'International food safety standard' },
+    { name: 'Lab Testing', desc: 'Continuous monitoring at every stage' },
+    { name: 'Source Protection', desc: 'Protected water sources worldwide' },
+    { name: 'Traceability', desc: 'Full supply chain transparency' },
   ]},
-  { icon: ShoppingBag, title: 'Shopify Store Optimization', items: [
-    { name: 'Store Design Principles', desc: 'Psychology-driven conversions' },
-    { name: 'Funnel Optimization', desc: 'Minimize drop-off' },
-    { name: 'Product Page Mastery', desc: 'High-converting pages & design' },
-    { name: 'Analytics & Reporting', desc: 'Data-driven decisions' },
+  { icon: Leaf, title: 'Sustainability', items: [
+    { name: 'Eco-Friendly Bottles', desc: 'Recyclable PET with reduced plastic' },
+    { name: 'Carbon Neutral Goals', desc: 'Committed to net-zero by 2050' },
+    { name: 'Water Stewardship', desc: 'Responsible water usage practices' },
+    { name: 'Community Programs', desc: 'Access to clean water initiatives' },
   ]},
-  { icon: Building2, title: 'Dropshipping Account Setup', items: [
-    { name: 'Platform & Account Creation', desc: 'Shopify, Meta, business manager setup' },
-    { name: 'Payments & Verification', desc: 'Payouts, policies, verification approvals' },
-    { name: 'Suppliers & Fulfillment', desc: 'Product sourcing and fulfillment workflows' },
-    { name: 'Testing & Quality Checks', desc: 'Order flow, returns, and shipping tests' },
+  { icon: Package, title: 'Product Range', items: [
+    { name: '0.5L Bottles', desc: 'Perfect for on-the-go hydration' },
+    { name: '1.5L Family Size', desc: 'Ideal for home and office' },
+    { name: '5L & 19L Gallons', desc: 'Bulk supply for households' },
+    { name: 'Sparkling Water', desc: 'Refreshing carbonated option' },
   ]},
 ];
 
 export function Services() {
   return (
     <motion.section
-      id="services"
+      id="products"
       className="py-16 bg-white"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -40,13 +40,13 @@ export function Services() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.p className="text-center text-[var(--uba-muted)] mb-2" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          Complete system covering everything from product research to global scaling
+          From source to bottle — excellence at every step
         </motion.p>
         <motion.h2 className="uba-section-title text-center mb-2" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }}>
-          What You&apos;ll <span className="highlight">Master</span>
+          What Makes Us <span className="highlight">Different</span>
         </motion.h2>
         <motion.p className="text-center text-[var(--uba-muted)] mb-12" initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
-          Complete system covering everything from product research to global scaling
+          Nestlé Pure Life stands apart through quality, sustainability, and innovation
         </motion.p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {MODULES.map((m, i) => (

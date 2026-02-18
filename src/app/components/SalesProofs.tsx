@@ -1,13 +1,15 @@
 import { motion } from 'motion/react';
 
-import img1 from '../Assets/new_edit3.width-600.format-jpeg.jpegquality-97.jpg';
-import img2 from '../Assets/jm2sboggkagjdnrkb7kh.jpg';
-import img3 from '../Assets/QF-Blog_Social-Media-Marketing_-Complete-Guide-for-Advertisers-2024_1920x1080.jpg';
+import img1 from '../Assets/nestle2.jpg';
+import img2 from '../Assets/nestle3.jpg';
+import img3 from '../Assets/drinking2.jpg';
+import img4 from '../Assets/drinkiung.jpg';
 
 const PROOFS = [
-  { title: 'Private Label Clothing Brand', metric: '46,000 PKR', sub: 'Yesterday · 4 orders', image: img1 },
-  { title: '367k PKR Last 7 Days Sale', metric: '367,500 PKR', sub: 'PL Clothing Brand', image: img2 },
-  { title: 'Small High Ticket PL Clothing', metric: '530,500 PKR', sub: 'Month to date', image: img3 },
+  { title: 'Pure Life 1.5L — Family Favourite', metric: 'Best Seller', sub: 'Trusted across Pakistan', image: img1 },
+  { title: 'Premium Bottled Water Range', metric: '#1 Brand', sub: 'In bottled water category', image: img2 },
+  { title: 'Healthy Hydration for Everyone', metric: '150+ Countries', sub: 'Global availability', image: img3 },
+  { title: 'Clean Water, Better Lives', metric: '1B+ Bottles', sub: 'Delivered annually', image: img4 },
 ];
 
 function ProofCard({ p }: { p: (typeof PROOFS)[0] }) {
@@ -46,7 +48,7 @@ export function SalesProofs() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
         >
-          Sales Proofs
+          Our Products
         </motion.span>
         <motion.h2
           className="uba-section-title text-center mb-2"
@@ -55,7 +57,7 @@ export function SalesProofs() {
           viewport={{ once: true }}
           transition={{ delay: 0.05 }}
         >
-          Sales <span className="highlight">Proofs</span>
+          Product <span className="highlight">Showcase</span>
         </motion.h2>
         <motion.p
           className="text-center text-[var(--uba-muted)]"
@@ -64,7 +66,7 @@ export function SalesProofs() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          Sales proofs from satisfied clients.
+          See what makes Nestlé Pure Life the choice of millions.
         </motion.p>
       </div>
       <div className="uba-scroll-row-wrap">

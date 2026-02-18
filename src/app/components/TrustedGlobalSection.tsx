@@ -1,35 +1,35 @@
-import { Package, Truck, Bike, ShoppingBag, Plane, ShoppingCart, Globe, Building2, Store } from 'lucide-react';
+import { Droplets, Truck, ShieldCheck, Factory, Leaf, Recycle, Award, Heart, Globe } from 'lucide-react';
 import ReactCountryFlag from 'react-country-flag';
 import { motion } from 'motion/react';
 
 const ROW1 = [
-  { label: 'AliExpress Dropshipping', name: 'AliExpress', Icon: Package },
-  { label: 'Zambeel', name: 'Zambeel', Icon: Building2 },
-  { label: 'Markaz', name: 'Markaz', Icon: Store },
-  { label: 'Shopify', name: 'Shopify', Icon: ShoppingBag },
-  { label: 'DHL Express', name: 'DHL', Icon: Truck },
-  { label: 'Gojek', name: 'Gojek', Icon: Bike },
-  { label: 'Express Delivery', name: 'Express', Icon: Plane },
-  { label: 'WooCommerce', name: 'WooCommerce', Icon: ShoppingCart },
-  { label: 'Meta', name: 'Meta', Icon: Globe },
+  { label: 'Water Purification', name: 'Purification', Icon: Droplets },
+  { label: 'Global Delivery', name: 'Delivery', Icon: Truck },
+  { label: 'Quality Testing', name: 'Testing', Icon: ShieldCheck },
+  { label: 'Bottling Plants', name: 'Bottling', Icon: Factory },
+  { label: 'Eco Packaging', name: 'Packaging', Icon: Leaf },
+  { label: 'Recycling', name: 'Recycling', Icon: Recycle },
+  { label: 'Certifications', name: 'Certified', Icon: Award },
+  { label: 'Community Care', name: 'Community', Icon: Heart },
+  { label: 'Global Reach', name: 'Worldwide', Icon: Globe },
 ];
 
 const COUNTRIES = [
-  { code: 'GB', label: 'UK' },
-  { code: 'US', label: 'United States' },
-  { code: 'SA', label: 'Saudi Arabia' },
   { code: 'PK', label: 'Pakistan' },
-  { code: 'DE', label: 'Germany' },
+  { code: 'SA', label: 'Saudi Arabia' },
   { code: 'AE', label: 'UAE' },
+  { code: 'US', label: 'United States' },
+  { code: 'GB', label: 'United Kingdom' },
   { code: 'FR', label: 'France' },
-  { code: 'IT', label: 'Italy' },
-  { code: 'ES', label: 'Spain' },
-  { code: 'NL', label: 'Netherlands' },
-  { code: 'CA', label: 'Canada' },
-  { code: 'AU', label: 'Australia' },
-  { code: 'SG', label: 'Singapore' },
+  { code: 'DE', label: 'Germany' },
   { code: 'IN', label: 'India' },
-  { code: 'MY', label: 'Malaysia' },
+  { code: 'CN', label: 'China' },
+  { code: 'BR', label: 'Brazil' },
+  { code: 'EG', label: 'Egypt' },
+  { code: 'NG', label: 'Nigeria' },
+  { code: 'MX', label: 'Mexico' },
+  { code: 'TR', label: 'Turkey' },
+  { code: 'ID', label: 'Indonesia' },
 ];
 
 function ServiceCard({ item }: { item: (typeof ROW1)[0] }) {
@@ -72,7 +72,8 @@ export function TrustedGlobalSection() {
 
   return (
     <motion.section
-      className="py-16 overflow-hidden bg-gradient-to-b from-white to-[#f8f7ff]"
+      id="global"
+      className="py-16 overflow-hidden bg-gradient-to-b from-white to-[#e0f7ff]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -86,7 +87,7 @@ export function TrustedGlobalSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="highlight">Trusted. Global. Fast Setup</span>
+          <span className="highlight">Trusted Worldwide. Pure Always.</span>
         </motion.h2>
         <motion.p
           className="text-center text-[var(--uba-dark)] text-lg"
@@ -95,7 +96,7 @@ export function TrustedGlobalSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Scale your <span className="text-[var(--uba-gold)] font-semibold">Shopify</span> brand without anymore hurdles.
+          Nestlé Pure Life — delivering <span className="text-[var(--uba-gold)] font-semibold">clean water</span> to families in 150+ countries.
         </motion.p>
       </div>
       <div className="space-y-6">
